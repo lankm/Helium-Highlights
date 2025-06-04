@@ -1,0 +1,29 @@
+{
+  "name": "helium-highlights",
+  "displayName": "Helium Highlights",
+  "description": "Visual Studio Code extension to provide highlights for Helium",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lankm/Helium-Highlights.git"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "helium",
+      "aliases": ["Helium", "helium"],
+      "extensions": [".He"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "helium",
+      "scopeName": "source.helium",
+      "path": "./syntaxes/helium.tmLanguage.json"
+    }]
+  }
+}
